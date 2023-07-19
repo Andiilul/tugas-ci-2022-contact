@@ -1,10 +1,16 @@
+//
+import Navbar from "./components/organism/Navbar";
+import Contactbox from "./components/organism/Contactbox"
 
+//
 function App() {
-  return (
-    <>
-    <div className=""> hai</div>
-    </>
-  )
+	return (
+		<>
+			<Navbar/>
+      <div className="bg-primary w-full h-screen"></div>
+      <Contactbox/>
+		</>
+	);
 }
 
-export default App
+export default App;
