@@ -7,4 +7,12 @@
 
 *{
   font-family:Poppins ,sans-serif;
+  margin:0;
+  padding:0;
+}
+
+body{
+  overflow-x: hidden;
+  display:flex;
+  flex-direction:column;
 }
