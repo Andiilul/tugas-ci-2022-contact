@@ -23,8 +23,11 @@ export default {
         },
       },
       colors:{  
-        primary:"#1E1E1E",
-        secondary:"#EBB701",
+        primary:"#001427",
+        green:"#708D81",
+        red:"#BF0603",
+        jasmine:"#F4D58D",
+        darkred:"#8D0801",
 
         
       }
