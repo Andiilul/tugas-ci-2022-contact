@@ -6,7 +6,8 @@ function App() {
 	return (
 		<>
 			<Navbar/>
-      <div className="bg-primary w-full h-screen"></div>
+      <div className="bg-gray w-full h-screen">dsadasdasdasdad</div>
+      <div className="bg-timberwolf w-full h-screen">sadasdasdasdasd</div>
 		</>
 	);
 }
