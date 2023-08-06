@@ -7,8 +7,9 @@ export default {
   theme: {
     extend: {
       animation:{
-        'topToBot':'TopToBot 300ms ease-out',
-        'botToTop':'BotToTop 400ms ease-in',
+        'topToBot':'TopToBot 100ms ease-out',
+        'botToTop':'BotToTop 100ms ease-in',
+        'blurry':'Blurry 300ms ease-in-out'
 
       },
       keyframes:{
@@ -21,13 +22,17 @@ export default {
           '70%':{transform:'translateY(-100%);'},
           '100%':{position:'absolute'}
         },
+        'Blurry':{
+          '0%':{backdropFilter:'blur(0)'},
+          '100%':{backdropFilter:'blur(5px)'}
+        }
       },
       colors:{  
-        primary:"#001427",
-        green:"#708D81",
-        red:"#BF0603",
-        jasmine:"#F4D58D",
-        darkred:"#8D0801",
+        indigo:"#03045E",
+        cornflower:"#758BFD",
+        periwinkle:"#AEB8FE",
+        antiwhite:"#F1F2F6",
+        oranges:"#FF8600",
 
         
       }
