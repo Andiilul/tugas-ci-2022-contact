@@ -9,6 +9,12 @@
   font-family:Poppins ,sans-serif;
   margin:0;
   padding:0;
+  box-sizing:border-box;
+  
+}
+*::selection{
+  color: rgb(255, 255, 255);
+	background-color: rgb(255, 134, 0);
 }
 
 body{
