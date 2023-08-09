@@ -1,14 +1,21 @@
 //
 import Navbar from "./components/organism/Navbar";
-
+import Hero from "./components/organism/Hero";
+import ContactBox from "./components/organism/ContactBox";
 //
 function App() {
+
+
 	return (
 		<>
-			<Navbar/>
-      <div className="bg-gray w-full h-screen">dsadasdasdasdad</div>
-      <div className="bg-timberwolf w-full h-screen">sadasdasdasdasd</div>
+    <Navbar />
+    <Hero />
+    <ContactBox/>
+		<p>
+			Will Be Full Completed Soon...
+		</p>
 		</>
+
 	);
 }
 
