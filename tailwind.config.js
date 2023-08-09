@@ -9,7 +9,9 @@ export default {
       animation:{
         'topToBot':'TopToBot 100ms ease-out',
         'botToTop':'BotToTop 100ms ease-in',
-        'blurry':'Blurry 300ms ease-in-out'
+        'blurry':'Blurry 300ms ease-in-out',
+        'infiniteSpin':'InfiniteSpin 6s infinite linear',
+        'leftAppear':'LeftAppear 1s ease-out'
 
       },
       keyframes:{
@@ -25,7 +27,17 @@ export default {
         'Blurry':{
           '0%':{backdropFilter:'blur(0)'},
           '100%':{backdropFilter:'blur(5px)'}
-        }
+        },
+        'InfiniteSpin':{
+          '0%':{transform:'rotate(0deg)'},
+          '100%':{transform:'rotate(360deg)'}
+        },
+        'LeftAppear':{
+          '0%':{transform:'translateX(-80%)',opacity:0},
+          '100%':{transform:'translateX(0)',opacity:1}
+        },
+        
+        
       },
       colors:{  
         indigo:"#03045E",
@@ -33,6 +45,8 @@ export default {
         periwinkle:"#AEB8FE",
         antiwhite:"#F1F2F6",
         oranges:"#FF8600",
+        dark:"#262626",
+        cyan:"#61dbfb"
 
         
       }
