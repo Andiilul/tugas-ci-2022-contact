@@ -6,10 +6,10 @@ export default function Hero() {
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 		backgroundRepeat: "no-repeat",
-		backgroundColor: "rgba(0, 0, 0, 0.5)", // Background color with opacity
+		backgroundColor: "rgba(0, 0, 0, 0.5)", 
 	};
 	const svgStyle = {
-		filter: "drop-shadow(0px 10px 10px rgba(0, 0, 0, 1))", // Add drop shadow
+		filter: "drop-shadow(0px 10px 10px rgba(0, 0, 0, 1))", 
 	};
 
 	const handleScrollToContact = () => {
