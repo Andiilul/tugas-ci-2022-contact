@@ -20,6 +20,10 @@ const ContactCard = (props) => {
 	const handleSendEmail = () => {
 		window.location.href = `mailto:${email}?`;
 	};
+	const messages = (boi)=>{
+		alert(boi)
+	}
+
 
 	const cardDesc = "text-[14px] text-dark line-clamp-1 ";
 	const tableRowCls = "align-top flex gap-3 ";
@@ -36,6 +40,7 @@ const ContactCard = (props) => {
 		backgroundSize: "cover",
 		backgroundPosition: "center",
 	};
+
 	return (
 		<main className="drop-shadow-[-1px_3px_3px_rgba(0,0,0,0.6)] flex flex-col rounded-lg overflow-hidden h-[200px] w-[400px] animate-leftAppear">
 			<section className="h-[35%]" style={imagesBackground}>
@@ -48,7 +53,7 @@ const ContactCard = (props) => {
           <div title={`${name}'s Profile Picture`} className="absolute -top-[41px] bg-white border-solid border-cyan border-[2px] aspect-square rounded-[50%] w-[80px]" style={profileImages}>
           </div>
           <div className="w-full items-center flex justify-between p-[0_10px] mt-[40px]">
-            <button className={actionButton} title="Call (Dummy Button)"><BsTelephoneFill/></button>
+            <button className={actionButton} title="Call (Dummy Button)" onClick={()=>messages((`Calling ${name} `))}><BsTelephoneFill/></button>
             <button className={actionButton} title="Send Email" onClick={handleSendEmail}><BsChatLeftTextFill/></button>
           </div>
         </aside>
