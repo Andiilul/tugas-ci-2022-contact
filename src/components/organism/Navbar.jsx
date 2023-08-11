@@ -42,8 +42,8 @@ export default function Navbar() {
 	}, []);
 
 	const Transition = isScrolled
-		? "bg-[rgba(38,38,38,0.7)] animate-topToBot fixed text-white bg-dark shadow-lg "
-		: "bg-transparent absolute text-antiwhite animate-botToTop";
+		? "bg-[rgba(38,38,38,0.9)] animate-topToBot fixed text-white 	shadow-lg "
+		: "absolute text-antiwhite animate-botToTop";
 
 	return (
 		<nav
